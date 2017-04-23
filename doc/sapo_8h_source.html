@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Corrida de Sapos: Código-Fonte de include/sapo.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Corrida de Sapos
+   </div>
+   <div id="projectbrief">Demonstração da implementação e uso de classes, objetos, construtores, destrutores e membros estáticos em C++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Arquivos&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">sapo.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="sapo_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef SAPO_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define SAPO_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using</span> std::stringstream;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">using</span> std::string;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classSapo.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSapo.html">Sapo</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">int</span> id;        </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">string</span> nome;   </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">string</span> cor;    </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">int</span> distancia; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">int</span> pulos;     </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classSapo.html#a9eb53c3dc42ac09a64ea122bab011fbd">   33</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classSapo.html#a9eb53c3dc42ac09a64ea122bab011fbd">contador</a>;                    </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classSapo.html#a5a91e6f6703faa8139071ef18b154557">   34</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classSapo.html#a5a91e6f6703faa8139071ef18b154557">maxjump</a>;                     </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classSapo.html#a93b5cf01ab8ac70811368734edbd32a4">   35</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classSapo.html#a93b5cf01ab8ac70811368734edbd32a4">runsize</a>;                     </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classSapo.html#a4dfbe2759140ed6903ff3e9389eae2c3">Sapo</a>();                                 </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classSapo.html#a4dfbe2759140ed6903ff3e9389eae2c3">Sapo</a>(<span class="keywordtype">string</span> n, <span class="keywordtype">string</span> c, <span class="keywordtype">int</span> d, <span class="keywordtype">int</span> p); </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classSapo.html#a4dfbe2759140ed6903ff3e9389eae2c3">Sapo</a>(<a class="code" href="classSapo.html">Sapo</a>&amp; r);                          </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classSapo.html#a3d1b73be223fc133f183e90c55d7f683">~Sapo</a>();                                </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classSapo.html#abfde25069ac36ca752e34004111c91bb">getID</a>();                            </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">string</span> <a class="code" href="classSapo.html#acfb11cd24152f00c9a4996f26f3ee39b">getNome</a>();                       </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSapo.html#ac081bf2e085dda319a91defafed4a81c">setNome</a>(<span class="keywordtype">string</span> n);                 </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">string</span> <a class="code" href="classSapo.html#a07bf7b8044bfa54ea12714bb98b11f1e">getCor</a>();                        </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSapo.html#a4e14b2d2e51bcb341ff40f7b91f46a8e">setCor</a>(<span class="keywordtype">string</span> c);                  </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classSapo.html#adb6b56ce4dae89c6f0847814b5de68c0">getDistancia</a>();                     </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSapo.html#a06e1940f2c0643337431b5ce13270253">setDistancia</a>(<span class="keywordtype">int</span> d);               </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classSapo.html#a6321fce29f046bd16dca769cd5f113d9">getPulos</a>();                         </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSapo.html#a9fff7f0bd9aa8a983ac171c2113d18c7">setPulos</a>(<span class="keywordtype">int</span> p);                   </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classSapo.html#a59751d925e844fda0719d99939b8be2a">pular</a>();                            </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classSapo.html#a72147da0334225b728ce49af418f669e">getNumeroObjetos</a>();          </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classSapo.html#ac4b59b17c5319b602941b0f050f2a38a">getRunSize</a>();                </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classSapo.html#aace4c3ea58ccf5da3a0241776cf11854">getMaxJump</a>();                </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classSapo.html#a9c43e605497924c2d69b6addedd6c6a4">sapo_sorter_distancia</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> *first_arg, <span class="keyword">const</span> <span class="keywordtype">void</span> *second_arg); </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classSapo_html_ac081bf2e085dda319a91defafed4a81c"><div class="ttname"><a href="classSapo.html#ac081bf2e085dda319a91defafed4a81c">Sapo::setNome</a></div><div class="ttdeci">void setNome(string n)</div><div class="ttdef"><b>Definition:</b> sapo.cpp:105</div></div>
+<div class="ttc" id="classSapo_html"><div class="ttname"><a href="classSapo.html">Sapo</a></div><div class="ttdoc">Classe que representa um sapo. </div><div class="ttdef"><b>Definition:</b> sapo.h:24</div></div>
+<div class="ttc" id="classSapo_html_adb6b56ce4dae89c6f0847814b5de68c0"><div class="ttname"><a href="classSapo.html#adb6b56ce4dae89c6f0847814b5de68c0">Sapo::getDistancia</a></div><div class="ttdeci">int getDistancia()</div><div class="ttdef"><b>Definition:</b> sapo.cpp:127</div></div>
+<div class="ttc" id="classSapo_html_a07bf7b8044bfa54ea12714bb98b11f1e"><div class="ttname"><a href="classSapo.html#a07bf7b8044bfa54ea12714bb98b11f1e">Sapo::getCor</a></div><div class="ttdeci">string getCor()</div><div class="ttdef"><b>Definition:</b> sapo.cpp:112</div></div>
+<div class="ttc" id="classSapo_html_a93b5cf01ab8ac70811368734edbd32a4"><div class="ttname"><a href="classSapo.html#a93b5cf01ab8ac70811368734edbd32a4">Sapo::runsize</a></div><div class="ttdeci">static int runsize</div><div class="ttdef"><b>Definition:</b> sapo.h:35</div></div>
+<div class="ttc" id="classSapo_html_a59751d925e844fda0719d99939b8be2a"><div class="ttname"><a href="classSapo.html#a59751d925e844fda0719d99939b8be2a">Sapo::pular</a></div><div class="ttdeci">int pular()</div><div class="ttdef"><b>Definition:</b> sapo.cpp:168</div></div>
+<div class="ttc" id="classSapo_html_a9eb53c3dc42ac09a64ea122bab011fbd"><div class="ttname"><a href="classSapo.html#a9eb53c3dc42ac09a64ea122bab011fbd">Sapo::contador</a></div><div class="ttdeci">static int contador</div><div class="ttdef"><b>Definition:</b> sapo.h:33</div></div>
+<div class="ttc" id="classSapo_html_a9fff7f0bd9aa8a983ac171c2113d18c7"><div class="ttname"><a href="classSapo.html#a9fff7f0bd9aa8a983ac171c2113d18c7">Sapo::setPulos</a></div><div class="ttdeci">void setPulos(int p)</div><div class="ttdef"><b>Definition:</b> sapo.cpp:154</div></div>
+<div class="ttc" id="classSapo_html_aace4c3ea58ccf5da3a0241776cf11854"><div class="ttname"><a href="classSapo.html#aace4c3ea58ccf5da3a0241776cf11854">Sapo::getMaxJump</a></div><div class="ttdeci">static int getMaxJump()</div><div class="ttdef"><b>Definition:</b> sapo.cpp:200</div></div>
+<div class="ttc" id="classSapo_html_a5a91e6f6703faa8139071ef18b154557"><div class="ttname"><a href="classSapo.html#a5a91e6f6703faa8139071ef18b154557">Sapo::maxjump</a></div><div class="ttdeci">static int maxjump</div><div class="ttdef"><b>Definition:</b> sapo.h:34</div></div>
+<div class="ttc" id="classSapo_html_acfb11cd24152f00c9a4996f26f3ee39b"><div class="ttname"><a href="classSapo.html#acfb11cd24152f00c9a4996f26f3ee39b">Sapo::getNome</a></div><div class="ttdeci">string getNome()</div><div class="ttdef"><b>Definition:</b> sapo.cpp:97</div></div>
+<div class="ttc" id="classSapo_html_a72147da0334225b728ce49af418f669e"><div class="ttname"><a href="classSapo.html#a72147da0334225b728ce49af418f669e">Sapo::getNumeroObjetos</a></div><div class="ttdeci">static int getNumeroObjetos()</div><div class="ttdef"><b>Definition:</b> sapo.cpp:180</div></div>
+<div class="ttc" id="classSapo_html_a06e1940f2c0643337431b5ce13270253"><div class="ttname"><a href="classSapo.html#a06e1940f2c0643337431b5ce13270253">Sapo::setDistancia</a></div><div class="ttdeci">void setDistancia(int d)</div><div class="ttdef"><b>Definition:</b> sapo.cpp:135</div></div>
+<div class="ttc" id="classSapo_html_a4dfbe2759140ed6903ff3e9389eae2c3"><div class="ttname"><a href="classSapo.html#a4dfbe2759140ed6903ff3e9389eae2c3">Sapo::Sapo</a></div><div class="ttdeci">Sapo()</div><div class="ttdef"><b>Definition:</b> sapo.cpp:30</div></div>
+<div class="ttc" id="classSapo_html_abfde25069ac36ca752e34004111c91bb"><div class="ttname"><a href="classSapo.html#abfde25069ac36ca752e34004111c91bb">Sapo::getID</a></div><div class="ttdeci">int getID()</div><div class="ttdef"><b>Definition:</b> sapo.cpp:90</div></div>
+<div class="ttc" id="classSapo_html_a3d1b73be223fc133f183e90c55d7f683"><div class="ttname"><a href="classSapo.html#a3d1b73be223fc133f183e90c55d7f683">Sapo::~Sapo</a></div><div class="ttdeci">~Sapo()</div><div class="ttdef"><b>Definition:</b> sapo.cpp:83</div></div>
+<div class="ttc" id="classSapo_html_a4e14b2d2e51bcb341ff40f7b91f46a8e"><div class="ttname"><a href="classSapo.html#a4e14b2d2e51bcb341ff40f7b91f46a8e">Sapo::setCor</a></div><div class="ttdeci">void setCor(string c)</div><div class="ttdef"><b>Definition:</b> sapo.cpp:120</div></div>
+<div class="ttc" id="classSapo_html_ac4b59b17c5319b602941b0f050f2a38a"><div class="ttname"><a href="classSapo.html#ac4b59b17c5319b602941b0f050f2a38a">Sapo::getRunSize</a></div><div class="ttdeci">static int getRunSize()</div><div class="ttdef"><b>Definition:</b> sapo.cpp:190</div></div>
+<div class="ttc" id="classSapo_html_a9c43e605497924c2d69b6addedd6c6a4"><div class="ttname"><a href="classSapo.html#a9c43e605497924c2d69b6addedd6c6a4">Sapo::sapo_sorter_distancia</a></div><div class="ttdeci">static int sapo_sorter_distancia(const void *first_arg, const void *second_arg)</div><div class="ttdef"><b>Definition:</b> sapo.cpp:210</div></div>
+<div class="ttc" id="classSapo_html_a6321fce29f046bd16dca769cd5f113d9"><div class="ttname"><a href="classSapo.html#a6321fce29f046bd16dca769cd5f113d9">Sapo::getPulos</a></div><div class="ttdeci">int getPulos()</div><div class="ttdef"><b>Definition:</b> sapo.cpp:146</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Domingo, 23 de Abril de 2017 16:14:26 para Corrida de Sapos por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

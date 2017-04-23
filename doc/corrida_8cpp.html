@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Corrida de Sapos: Referência do Arquivo src/corrida.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Corrida de Sapos
+   </div>
+   <div id="projectbrief">Demonstração da implementação e uso de classes, objetos, construtores, destrutores e membros estáticos em C++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Arquivos&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo corrida.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Definicao do corpo das funções para implementar uma corrida de sapos.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="corrida_8h_source.html">../include/corrida.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sapo_8h_source.html">../include/sapo.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependência de inclusões para corrida.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="corrida_8cpp__incl.png" border="0" usemap="#src_2corrida_8cpp" alt=""/></div>
+<map name="src_2corrida_8cpp" id="src_2corrida_8cpp">
+<area shape="rect" id="node2" href="corrida_8h.html" title="Definicao do cabeçalho das funções para implementar uma corrida de sapos. " alt="" coords="53,80,183,107"/><area shape="rect" id="node6" href="sapo_8h.html" title="Definicao da classe Sapo, que representa um sapo. " alt="" coords="190,155,251,181"/></map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a5e17dd8a87fd778f5acdd6793c19e9c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="corrida_8cpp.html#a5e17dd8a87fd778f5acdd6793c19e9c6">verificaOpcoes</a> (int argc, char *argv[], int *v, int *a)</td></tr>
+<tr class="memdesc:a5e17dd8a87fd778f5acdd6793c19e9c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que verifica os argumentos passados na chamada do programa. Parâmetros devem ser passados com "=". Ex.: -v=100 para alterar a velocidade da corrida para 100ms. Os possíveis parâmetros são: -v (velocidade); -a (número de atletas); -d (tamanho do percurso); -p (salto máximo)  <a href="#a5e17dd8a87fd778f5acdd6793c19e9c6">Mais...</a><br /></td></tr>
+<tr class="separator:a5e17dd8a87fd778f5acdd6793c19e9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbb1a7f014f9e66393f3926004b4f84a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="corrida_8cpp.html#afbb1a7f014f9e66393f3926004b4f84a">showDadosCorrida</a> (<a class="el" href="classSapo.html">Sapo</a> *s, int atletas, int <a class="el" href="main_8cpp.html#a320ea1878a4f2040501c65d34a473abb">velocidade</a>)</td></tr>
+<tr class="memdesc:afbb1a7f014f9e66393f3926004b4f84a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que exibe os dados gerais de uma corrida.  <a href="#afbb1a7f014f9e66393f3926004b4f84a">Mais...</a><br /></td></tr>
+<tr class="separator:afbb1a7f014f9e66393f3926004b4f84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab04654c62595d8eca03f941b4e3b5ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="corrida_8cpp.html#aab04654c62595d8eca03f941b4e3b5ce">corrida</a> (<a class="el" href="classSapo.html">Sapo</a> *s, int qtde, int <a class="el" href="main_8cpp.html#a320ea1878a4f2040501c65d34a473abb">velocidade</a>)</td></tr>
+<tr class="memdesc:aab04654c62595d8eca03f941b4e3b5ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que executa uma corrida.  <a href="#aab04654c62595d8eca03f941b4e3b5ce">Mais...</a><br /></td></tr>
+<tr class="separator:aab04654c62595d8eca03f941b4e3b5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60f01d4db0133cd5b1d9281407be6814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="corrida_8cpp.html#a60f01d4db0133cd5b1d9281407be6814">imprimeResultado</a> (<a class="el" href="classSapo.html">Sapo</a> *s)</td></tr>
+<tr class="memdesc:a60f01d4db0133cd5b1d9281407be6814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que imprime o resultado da corrida.  <a href="#a60f01d4db0133cd5b1d9281407be6814">Mais...</a><br /></td></tr>
+<tr class="separator:a60f01d4db0133cd5b1d9281407be6814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
+<div class="textblock"><p>Definicao do corpo das funções para implementar uma corrida de sapos. </p>
+<dl class="section author"><dt>Autor</dt><dd>Dionísio Carvalho (<a href="#" onclick="location.href='mai'+'lto:'+'dio'+'ni'+'sio'+'@n'+'ara'+'co'+'sta'+'.c'+'om.'+'br'; return false;">dioni<span style="display: none;">.nosp@m.</span>sio@<span style="display: none;">.nosp@m.</span>narac<span style="display: none;">.nosp@m.</span>osta<span style="display: none;">.nosp@m.</span>.com.<span style="display: none;">.nosp@m.</span>br</a>)) </dd></dl>
+<dl class="section since"><dt>Desde</dt><dd>22/04/2017 </dd></dl>
+<dl class="section date"><dt>Data</dt><dd>22/04/2017 </dd></dl>
+</div><h2 class="groupheader">Funções</h2>
+<a class="anchor" id="aab04654c62595d8eca03f941b4e3b5ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void corrida </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSapo.html">Sapo</a> *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>qtde</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>velocidade</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que executa uma corrida. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">*s</td><td>Vetor de Sapos (atletas) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">qtde</td><td>Quantidade de atletas </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">velocidade</td><td>Velocidade da corrida (igual à 0 não exibe a corrida) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a60f01d4db0133cd5b1d9281407be6814"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void imprimeResultado </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSapo.html">Sapo</a> *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que imprime o resultado da corrida. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">*s</td><td>Vetor de Sapos (atletas) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afbb1a7f014f9e66393f3926004b4f84a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void showDadosCorrida </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSapo.html">Sapo</a> *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>atletas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>velocidade</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que exibe os dados gerais de uma corrida. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">*s</td><td>Vetor de Sapos (atletas) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">atletas</td><td>Quantidade de atletas </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">velocidade</td><td>Velocidade da corrida </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5e17dd8a87fd778f5acdd6793c19e9c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void verificaOpcoes </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que verifica os argumentos passados na chamada do programa. Parâmetros devem ser passados com "=". Ex.: -v=100 para alterar a velocidade da corrida para 100ms. Os possíveis parâmetros são: -v (velocidade); -a (número de atletas); -d (tamanho do percurso); -p (salto máximo) </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">argc</td><td>Quantidade de argumentos </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*argv</td><td>Vetor com os argumentos </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">*v</td><td>Velocidade da corrida </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">*a</td><td>Quantidade de atletas </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Domingo, 23 de Abril de 2017 16:14:26 para Corrida de Sapos por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>
